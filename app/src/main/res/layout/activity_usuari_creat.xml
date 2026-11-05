@@ -7,14 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".UsuariCreat">
 
+
     <TextView
         android:id="@+id/TituloP2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
         android:text="El teu perfil"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,17 +24,74 @@
         android:id="@+id/mostrarNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="4dp"
         android:text="NOM: "
-        app:layout_constraintEnd_toStartOf="@+id/NombreUC"
-        app:layout_constraintTop_toTopOf="@+id/NombreUC" />
+        app:layout_constraintBottom_toTopOf="@+id/NombreUC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/NombreUC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="167dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/CorreuUC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CORREU" />
+
+    <TextView
+        android:id="@+id/CORREU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="224dp"
+        android:text="CORREU: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="296dp"
+        android:text="BIOGRAFIA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bioUC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BIO" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,8 +19,10 @@ class MainActivity : AppCompatActivity() {
         lateinit var textView: TextView
 
         val botonCrear = findViewById<Button>(R.id.Crear)
-
         val nomUsuari = findViewById<EditText>(R.id.NomUsuari)
+        val correuUsuari = findViewById<EditText>(R.id.CorreuElectronic)
+        val bioUsuari = findViewById<EditText>(R.id.Biografia)
+        val imegenUsuari = findViewById<EditText>(R.id.URL)
 
         fun text() = "Nom usuari: $nomUsuari"
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -31,6 +33,10 @@ class MainActivity : AppCompatActivity() {
         botonCrear.setOnClickListener {
             val intent = Intent(this, UsuariCreat::class.java).apply {
                 putExtra("NOM_USUARI", nomUsuari.text.toString())
+                putExtra("CORREU_USUARI", correuUsuari.text.toString())
+                putExtra("BIO_USUARI", bioUsuari.text.toString())
+                putExtra("URL_USUARI", imegenUsuari.text.toString())
+
             }
             startActivity(intent)
         }
